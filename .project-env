@@ -12,7 +12,7 @@ if [ '' == "$projectRoot" ]
 then 
   projectRoot='.'
 fi
-workingDir="$projectRoot/workspace"
+workspace="$projectRoot/workspace"
 
 # package info
 author=ogata-k
@@ -27,7 +27,7 @@ dockerFileName=Dockerfile
 # satysfi info
 satysfiPackagesFileFromProjectRoot=./.satysfi-packages
 
-# $workingDir's files
+# $workspace's files
 srcFileName=main.saty
 pdfFileName=テンプレートサンプル.pdf
 

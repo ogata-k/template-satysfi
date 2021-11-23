@@ -10,5 +10,5 @@ then
 fi
 . "$ENV_ROOT/.project-env"
 
-echo "run: opam list "$@" on $(realpath $workingDir)"
-docker run --rm -v "$(realpath $workingDir):/satysfi" "$dockerImage" opam list "$@"
+echo "run: opam list "$@" on $(realpath $workspace)"
+docker run --rm -v "$(realpath $workspace):/satysfi" "$dockerImage" opam list "$@"

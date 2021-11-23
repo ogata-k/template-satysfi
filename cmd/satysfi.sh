@@ -10,5 +10,5 @@ then
 fi
 . "$ENV_ROOT/.project-env"
 
-echo "run: satysfi "$@" on $(realpath $workingDir)"
-docker run --rm -v "$(realpath $workingDir):/satysfi" "$dockerImage" satysfi "$@"
+echo "run: satysfi "$@" on $(realpath $workspace)"
+docker run --rm -v "$(realpath $workspace):/satysfi" "$dockerImage" satysfi "$@"

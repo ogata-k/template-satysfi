@@ -10,5 +10,5 @@ then
 fi
 . "$ENV_ROOT/.project-env"
 
-echo "run: satyrographos "$@" on $(realpath $workingDir)"
-docker run --rm -v "$(realpath $workingDir):/satysfi" "$dockerImage" satyrographos "$@"
+echo "run: satyrographos "$@" on $(realpath $workspace)"
+docker run --rm -v "$(realpath $workspace):/satysfi" "$dockerImage" satyrographos "$@"

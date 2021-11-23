@@ -10,5 +10,5 @@ then
 fi
 . "$ENV_ROOT/.project-env"
 
-echo "build pdf from $srcFileName to $pdfFileName on $(realpath $workingDir)"
-docker run --rm -v "$(realpath $workingDir):/satysfi" "$dockerImage" satysfi -o "$pdfFileName" "$srcFileName"
+echo "build pdf from $srcFileName to $pdfFileName on $(realpath $workspace)"
+docker run --rm -v "$(realpath $workspace):/satysfi" "$dockerImage" satysfi -o "$pdfFileName" "$srcFileName"

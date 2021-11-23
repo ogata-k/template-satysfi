@@ -10,5 +10,5 @@ then
 fi
 . "$ENV_ROOT/.project-env"
 
-echo "run: satysfi --type-check-only "$@" on $(realpath $workingDir)"
-docker run --rm -v "$(realpath $workingDir):/satysfi" "$dockerImage" satysfi --type-check-only "$@"
+echo "run: satysfi --type-check-only "$@" on $(realpath $workspace)"
+docker run --rm -v "$(realpath $workspace):/satysfi" "$dockerImage" satysfi --type-check-only "$@"
