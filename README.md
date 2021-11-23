@@ -16,7 +16,7 @@ cmd下の各コマンドを実行する際最初に読み込まれます。
 
 ### .satysfi-packages
 opam install \<package\> && satyrographos install;
-でインストール可能なSATySFi用パッケージ(\<package\>)を改行で列挙するためのファイルです。
+でインストール可能なSATySFi用パッケージ（\<package\>）を改行で列挙するためのファイルです。
 .project-envのsatysfiPackagesFileFromProjectRootでプロジェクトのルートからのファイルパスを指定することで変更できます。
 
 ### cmd
@@ -24,12 +24,12 @@ opam install \<package\> && satyrographos install;
 
 利用可能なコマンドは以下となります。
 
-* build-docker.sh<br/>.satysfi-packagesで上げられたSATySFiのパッケージをインストールしてDockerイメージを作成します。
+* build-docker.sh<br/>.satysfi-packagesで上げられたSATySFiのパッケージをインストールしてDockerイメージを作成します。<br/>
 注意：以下のファイルに変更があった場合はbuild-docker.shを叩いてDockerイメージを更新してください。
     * .satysfi-packages
     * .project-env
 
-* build-pdf.sh<br/>workspaceディレクトリ下のmain.saty(srcFileName変数で指定)をテンプレートサンプル.pdf(pdfFileName変数で指定)として書き出します。
+* build-pdf.sh<br/>workspaceディレクトリ下のmain.saty（srcFileName変数で指定）をテンプレートサンプル.pdf（pdfFileName変数で指定）として書き出します。
 * check-src.sh<br/>workspaceディレクトリ下のファイル名を引数に指定するとsatysfiコマンドの型チェックをすることができます。
 * opam.sh<br/>workspaceディレクトリ下で呼び出されるopamコマンドのエイリアスです。
 * satyrographos.sh<br/>workspaceディレクトリ下で呼び出されるsatyrographosコマンドのエイリアスです。
