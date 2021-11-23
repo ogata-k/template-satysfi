@@ -1,8 +1,33 @@
+# 本プロジェクトの環境変数の設定一覧
+# 各コマンドをたたく直前に必ず読み込まれる
+# 
+# 注意
+# ・パス系は最後に/を入れないこと
+# ・.project-envは$projectRootから動かすとコマンドの実行ができなくなるのでうごかさないこと
+# 
+
+# meta
+projectRoot=$(git rev-parse --show-cdup)
+if [ '' == "$projectRoot" ]
+then 
+  projectRoot='.'
+fi
+workingDir="$projectRoot/workspace"
+
+# package info
 author=ogata-k
 projectName=satysfi_project_template
-dockerTag=0.0.6
-dockerFile=Dockerfile
 
-packagesFile=.satysfi-packages
-srcFile=main.saty
-pdfFileBaseName=テンプレートサンプル
+# docker info
+dockerTag=0.0.6
+dockerRoot="$projectRoot/docker"
+dockerImage="$author/$projectName:$dockerTag"
+dockerFileName=Dockerfile
+
+# satysfi info
+satysfiPackagesFileFromProjectRoot=./.satysfi-packages
+
+# $workingDir's files
+srcFileName=main.saty
+pdfFileName=テンプレートサンプル.pdf
+

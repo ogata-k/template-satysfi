@@ -1,0 +1,15 @@
+@import: styles/base
+
+document (|
+        title = {title};
+        author = {author};
+        date = {2018/11/04};
+        show-title = true;
+        show-toc = true;
+        style = ArticleJa.a4paper;
+        design = ArticleJa.article;
+        header-footer = ArticleJa.normalHF;
+        fonts = ArticleJa.fonts;
+|) '<
+    +p{test}
+>

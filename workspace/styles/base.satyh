@@ -1,0 +1,8 @@
+@require: class-exdesign/exdesign
+@require: class-exdesign/article-ja
+
+let red = RGB (1., 0., 0.)
+let blue = RGB (0., 0., 1.)
+let green = RGB (0., 1., 0.)
+let black = Gray 0.
+
