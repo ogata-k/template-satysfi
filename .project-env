@@ -1,0 +1,8 @@
+author=ogata-k
+projectName=satysfi_project_template
+dockerTag=0.0.6
+dockerFile=Dockerfile
+
+packagesFile=.satysfi-packages
+srcFile=main.saty
+pdfFileBaseName=テンプレートサンプル
