@@ -28,6 +28,6 @@ dockerFileName=Dockerfile
 satysfiPackagesFileFromProjectRoot=./.satysfi-packages
 
 # $workspace's files
-srcFileName=main.saty
-pdfFileName=テンプレートサンプル.pdf
+mainSrcFileName=main.saty
+mainPdfFileName=テンプレートサンプル.pdf
 
