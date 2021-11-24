@@ -30,7 +30,7 @@ opam install \<package\> && satyrographos install;
     * .project-env
 
 * build-main.sh<br/>workspaceディレクトリ下のmain.saty（mainSrcFileName変数で指定）をテンプレートサンプル.pdf（mainPdfFileName変数で指定）として書き出します。
-* check-src.sh<br/>workspaceディレクトリ下のファイル名を引数に指定するとsatysfiコマンドの型チェックをすることができます。
+* check-all.sh<br/>workspaceディレクトリ下のすべてのsatyhファイルとsatygファイルの型チェックを行う
 * opam.sh<br/>workspaceディレクトリ下で呼び出されるopamコマンドのエイリアスです。
 * satyrographos.sh<br/>workspaceディレクトリ下で呼び出されるsatyrographosコマンドのエイリアスです。
 * satysfi.sh<br/>workspaceディレクトリ下で呼び出されるsatysfiコマンドのエイリアスです。
