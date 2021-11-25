@@ -1,2 +1,30 @@
-satysfi-base
-satysfi-class-exdesign
+# format = <line>
+# <comment> = '#.*'
+# <package> = '<package name without 'satysfi-'>((\.[:digit:]){3})?'
+# <line> = '[:space:]*<package>?[:space:]*<comment>'
+
+# base utility
+base.1.4.0
+siunitx.0.1.1 # SI unit extend
+uline.0.2.2
+ruby.0.1.2 # Japanese only
+easytable.1.1.1
+enumitem.2.0.0
+code-printer.1.0.0
+
+# media
+image.0.1.0
+figbox.0.1.3
+
+# math utility
+azmath.0.0.3
+
+# document structure
+class-jlreq.0.0.3
+#class-slydifi.0.4.0 
+#class-exdesign.0.3.1
+
+# option
+#latexcmds.0.1.0
+#fss.0.2.0
+
