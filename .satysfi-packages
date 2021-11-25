@@ -1,7 +1,7 @@
-# format = <line>
+# line-format = <line>
+# <line> = '[:space:]*<package>?[:space:]*<comment>?'
+# <package> = '<package name without 'satysfi-'>((\.[:digit:]+){3})?'
 # <comment> = '#.*'
-# <package> = '<package name without 'satysfi-'>((\.[:digit:]){3})?'
-# <line> = '[:space:]*<package>?[:space:]*<comment>'
 
 # base utility
 base.1.4.0
