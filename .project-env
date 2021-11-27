@@ -33,5 +33,5 @@ dockerFileName=Dockerfile
 
 # $workspace's files
 mainSrcFileName=main.saty
-mainPdfFileName=テンプレートサンプル.pdf
+mainPdfFileName=satysfi-demo.pdf
 

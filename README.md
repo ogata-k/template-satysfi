@@ -51,4 +51,3 @@ dockerの設定が格納されているディレクトリです。
 ### workspace
 作業用ディレクトリです。
 .project-envのworkspace変数で指定されています。
-
