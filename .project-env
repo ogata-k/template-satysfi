@@ -4,6 +4,9 @@
 # もし外部から使用するsatysfiのバージョンを指定したい場合は、
 # satysfiVersion変数でamutake/satysfiのopam, satyrographos入りのバージョンのタグを指定し、
 # コマンド内でsatysfiVersion変数を参照できるようにしたうえでコマンドを実行する
+# ex.
+#   > satysfiVersion=latest cmd/build-docker.sh             # スクリプトを実行する場合
+#   > bash -c "satysfiVersion=latest cmd/build-docker.sh"   # bashコマンドを使って実行する場合
 # 
 # 注意
 # ・パス系は最後に/を入れないこと
@@ -27,9 +30,6 @@ dockerTag=${satysfiVersion:-0.0.6}
 dockerRoot="$projectRoot/docker"
 dockerImage="$author/$projectName:$dockerTag"
 dockerFileName=Dockerfile
-
-# satysfi info
-satysfiPackagesFileFromProjectRoot=./.satysfi-packages
 
 # $workspace's files
 mainSrcFileName=main.saty

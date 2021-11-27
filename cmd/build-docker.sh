@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# 引数はオプションで以下のみサポートしている
+# --no-cache : Flag whether use cache when build image
+# --progress : Set type of progress output (auto, plain, tty). Use plain to show container output(default "auto")
+                                
 # エラーがあったら中断
 set -e
 
@@ -8,6 +12,10 @@ if [ '' == "$ENV_ROOT" ]
 then 
   ENV_ROOT='.'
 fi
-. "$ENV_ROOT/.project-env"
+. "$ENV_ROOT/.project-env"  
 
-docker build --progress=plain -f "$dockerRoot/$dockerFileName" --build-arg tag="$dockerTag" --build-arg packagesFile="$satysfiPackagesFileFromProjectRoot" -t "$dockerImage" "$projectRoot"
+if [[ ! -e "$projectRoot/.satysfi-packages" ]] ; then touch "$projectRoot/.satysfi-packages"; fi
+docker build "$@" -f "$dockerRoot/$dockerFileName" --build-arg tag="$dockerTag" --build-arg packagesFile="./.satysfi-packages" -t "$dockerImage" "$projectRoot"
+
+echo ''
+$projectRoot/cmd/load-packages.sh

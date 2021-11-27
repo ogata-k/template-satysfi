@@ -21,8 +21,8 @@ azmath.0.0.3
 
 # document structure
 class-jlreq.0.0.3
-#class-slydifi.0.4.0 
-#class-exdesign.0.3.1
+class-slydifi.0.4.0 
+class-exdesign.0.3.1
 
 # option
 #latexcmds.0.1.0
