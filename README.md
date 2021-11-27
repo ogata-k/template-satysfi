@@ -1,5 +1,5 @@
 # template-satysfi
-[SATySFi](https://github.com/gfngfn/SATySFi)で組版するときのプロジェクトテンプレートです。
+[SATySFi](https://github.com/gfngfn/SATySFi) で組版するときのプロジェクトテンプレートです。
 
 ## 前提
 以下を利用できる環境であることを想定しています。
